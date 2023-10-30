@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Add your modal button -->
+<button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#myModal1" style="background-color: rgb(218, 165, 32)">
+    Lebih Lengkap
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" style="backdrop-filter: blur(5px);" id="myModal1" data-bs-backdrop="static" data-bs-keyboard="false"
+    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel" style="color: black;">Materi X PPLG</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="color: black;">
+          Materi ketika memasuki kelas 10 yaitu mempelajari terkait C++ dasar hingga membuat suatu
+          program sederhana, dilanjutkan mempelajari C# dasar hingga mempelajari aritmatika dalam C# lalu 
+          juga ketika sudah membuat beberapa program materi akan berlanjut ke desain yang dibuat menggunakan 
+          AI / Adobe Illustrator yang dimana dipelajari dasar nya terlebih dahulu lalu lama kelamaan akan 
+          mempelajari untuk pembuatan logo dan diakhiri semester 2 akan mempelajari IoT Arduino untuk pembuatan 
+          benda dengan sensor apapun.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+<script>
+  // Get a reference to your modal element
+  var myModal = document.getElementById('myModal1');
+
+  // Add an event listener for the 'show.bs.modal' event, which triggers when the modal is about to be shown
+  myModal.addEventListener('show.bs.modal', function (event) {
+    // Close the modal when the user scrolls
+    window.addEventListener('scroll', function () {
+      // Check if the modal is currently visible
+      if (myModal.style.display === 'block') {
+        // Close the modal
+        $('#myModal1').modal('hide');
+      }
+    });
+  });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</html>

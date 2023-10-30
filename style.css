@@ -1,0 +1,91 @@
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.timeline-item {
+    margin-bottom: 50px;
+}
+
+.timeline-content {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-date {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    background: #04f734;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+.jarak {
+    margin-top: 2rem;
+}
+.card {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    border-radius: 15px;
+}
+.img1{
+    height: 200px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    width: 100%;
+}
+.img2{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 7px solid #fff;
+    margin-top: -80px;
+}
+.card:hover .img2 {
+    border-color: darkcyan;
+    transition: .7s;
+}
+.main-text h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 20px;
+    margin: 0 0 20px;
+}
+.main-text p {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.socials{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.socials i {
+    font-size: 20px;
+    color: darkcyan;
+    padding: 0 10px;
+}
+
+.btn-dark:hover{
+    background-color: rgb(246, 6, 6);
+}
+
+.btn-outline-light{
+    background-color: #04f734;
+}
+
+.btn-outline-light:hover{
+    background-color: red ;
+    color: aqua;
+}
